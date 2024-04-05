@@ -6,7 +6,7 @@ import { FaFacebook, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-      <section className="bg-neutral-grey text-text-secondary pt-16 pb-12 ">
+      <section className="bg-neutral-grey text-text-secondary pt-16 pb-12 mt-28 ">
         <div className="container">
           <div className="flex justify-between mb-16">
             <div className="basis-1/4">

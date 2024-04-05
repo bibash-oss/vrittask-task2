@@ -3,6 +3,7 @@ import Logo from "../assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import PrimaryBtn from "./PrimaryBtn";
 import SecondaryBtn from "./SecondaryBtn";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -12,10 +13,30 @@ export default function Header() {
       </div>
       <div className="flex gap-8">
         <ul className="gap-8 hidden lg:flex items-center">
-          <li>Home</li>
-          <li>Jobs</li>
-          <li>Companies</li>
-          <li>About us</li>
+          <NavLink
+            to={"/"}
+            className={({ isActive }) => (isActive ? "text-primary-color" : "")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to={"/jobs"}
+            className={({ isActive }) => (isActive ? "text-primary-color" : "")}
+          >
+            Jobs
+          </NavLink>
+          <NavLink
+            to={"/companies"}
+            className={({ isActive }) => (isActive ? "text-primary-color" : "")}
+          >
+            Companies
+          </NavLink>
+          <NavLink
+            to={"/about"}
+            className={({ isActive }) => (isActive ? "text-primary-color" : "")}
+          >
+            About us
+          </NavLink>
         </ul>
         <div className="flex gap-4">
           <PrimaryBtn btnName="Sign up" />

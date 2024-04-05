@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function Search() {
   return (
-    <div className="p-3 bg-white mt-16">
+    <div className="p-3 bg-white mt-16  border">
       <form action="" className="flex justify-between">
         <div className="flex gap-2 basis-4/5 items-center">
           <div className="w-full flex items-center text-text-secondary">
